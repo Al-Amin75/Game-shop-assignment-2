@@ -69,7 +69,12 @@ nav{
 }
 
 /* nav design ends here */
-
+main{
+    main{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
 /* Banner style start */
 .banner-container{
     margin: 50px auto 0;
@@ -208,6 +213,55 @@ nav{
 
 /* We are gamer section style end*/
 
+/* Online game style start */
+
+.online-game-container{
+    max-width: 1200px;
+    text-align: center;
+}
+.funny-text{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.online-game-container h3{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.online-game-container p{
+    color: #534C64;
+    text-align: center;
+    font-size: 1.12rem;
+    margin-bottom: 0;
+}
+.online-img-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+    margin-left: 70px;
+    margin-top: 48px;
+}
+.online-img-container img{
+    width: 280px;
+    height: 338px;
+}
+.online-img-card p{
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: left;
+}
+/* Online game style end */
+
+
+
+
+
 
 
 
@@ -260,4 +314,14 @@ nav{
         font-size: 1.2rem;
     }
     /* we are gamer style end*/
+
+    /* Online funny games responsive */
+    .online-img-container{
+        grid-template-columns: 1fr;
+        margin: 10px 0px;
+    }
+    .online-img-card p{
+        text-align: center; 
+        font-size: .8rem;
+    }
 }
