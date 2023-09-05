@@ -2,6 +2,7 @@
 *{
     box-sizing: border-box;
 }
+*{margin: 0;}
 body{
     font-family: 'Work Sans', sans-serif;
 }
@@ -213,7 +214,7 @@ main{
 
 /* We are gamer section style end*/
 
-/* Online game style start */
+/* Online funny game style start */
 
 .online-game-container{
     max-width: 1200px;
@@ -239,26 +240,123 @@ main{
     font-size: 1.12rem;
     margin-bottom: 0;
 }
-.online-img-container{
+.online-funny-img-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 24px;
     margin-left: 70px;
     margin-top: 48px;
 }
-.online-img-container img{
+.online-funny-img-container img{
     width: 280px;
     height: 338px;
 }
-.online-img-card p{
+.online-funny-img-card p{
     color: #534C64;
     font-size: 1.25rem;
     font-weight: 500;
     text-align: left;
 }
-/* Online game style end */
+/* Online funny game style end */
 
+/* Online game style start here */
+.online-section{
+    min-height: 500px;
+    padding: 20px 0;
+    margin-top: 120px;
+    background: #FFF;
+}
+.online-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 113px;
+}
+.online-img{
+    width: 50%;
+    position: relative;  
+}
+.online-img img{
+    width: 70%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.online-text{
+    width: 50%;
+    padding: 20px 40px;
+}
+.online-img-sticker{
+    width: 220px;
+    height:180px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -20%;
+    left: 65%; 
+}
+.online-text h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.online-text p{
+    color: #534C64;
+    font-size: 1.12rem;
+    font-weight: 400;
+    margin-top: 24px;
+}
+.play-games-text{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Online game style end here */
 
+/* Available game section style start */
+.available-game-section{
+    padding: 40px 0px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+    margin-top: 50px;
+}
+.available-game-container{
+    max-width: 1200px;
+     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    row-gap: 27px;
+    column-gap: 30px;
+    
+}
+.game-info{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.game-info:hover{
+    border-radius: 50px;
+    border: 1.5px solid var(--Linear, #FF42A5);
+    background: #FFF;
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.game-info img{
+    width: 60px;
+    height: 60px;
+}
+.game-info-second-row{
+   width: 100%;
+   margin-left: 80px;
+}
+/* Available game section style end */
 
 
 
@@ -268,6 +366,7 @@ main{
 
 
 /* Responsive styles */
+/*  */
 @media screen and (max-width:576px) {
     .nav-container,
     .nav-items-container
@@ -295,7 +394,7 @@ main{
 
     /* Banner responsive ends here */
 
-    /* we are gamer style start*/
+    /* we are gamer responsive start*/
     .we-are-container{
         flex-direction: column;
     }
@@ -313,15 +412,56 @@ main{
     .we-text .unleash-text{
         font-size: 1.2rem;
     }
-    /* we are gamer style end*/
+    /* we are gamer responsive end*/
 
     /* Online funny games responsive */
-    .online-img-container{
+    .online-funny-img-container{
         grid-template-columns: 1fr;
         margin: 10px 0px;
     }
-    .online-img-card p{
+    .online-funny-img-card p{
         text-align: center; 
         font-size: .8rem;
+    }
+
+    /* play Online game responsive*/
+    .online-container{
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    .online-text{
+        width: 100%;
+        text-align: center;
+    }
+    .online-img{
+        width: 100%;
+        height: 100%;
+    }
+    .online-img-sticker{
+        width: 160px;
+        height: 140px;
+    }
+
+    /* Available game responsive */
+    .available-game-container{
+        grid-template-columns: repeat(3,100px);
+        padding: 30px;
+        margin-left: 20px;
+        width: 100%;
+
+    }
+    .available-game-container .game-info-second-row{
+        margin:0;
+    }
+    .game-info img{
+        width: 30px;
+        height: 30px;
+    }
+    .game-info p{
+        font-size: .6rem;
+    }
+    .available-game-section{
+        width: 100%;
+        background: #FFF;
     }
 }
