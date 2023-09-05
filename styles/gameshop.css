@@ -56,6 +56,7 @@ nav{
 .nav-items-container a{
     text-decoration: none;
     font-size: 1.13rem;
+    color: #3C354F;
 }
 .nav-items-container .follow-us-btn{
     border-radius: 8px;
@@ -68,6 +69,146 @@ nav{
 }
 
 /* nav design ends here */
+
+/* Banner style start */
+.banner-container{
+    margin: 50px auto 0;
+    max-width: 1200px;
+    min-height: 50px;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+
+}
+.banner-text{
+    width: 50%; 
+    background-image: url('../images/Group\ 14.png');
+    fill: linear-gradient(235deg, rgba(140, 87, 238, 0.03) 3.9%, rgba(241, 68, 174, 0.03) 100.56%);
+    text-align: left;
+    padding: 80px 80px;
+}
+.banner-text h3{
+    margin-bottom: 0;
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner-img{
+    width: 45%;
+}
+.banner-img img{
+    width: 100%;
+    border-radius: 10px;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.banner-text h1{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5.9rem;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.banner-text p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #534C64;
+    margin-top: 0;
+   
+}
+.signin-btn{
+    color: #FFF;
+    border-radius: 48px;
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 21px 40px;
+    border: 0;
+    text-align: left;
+}
+.go-btn{
+    border-radius: 48px;
+    color: #FFF;
+    background: #4EC5F7;
+    padding: 21px 40px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: 0;
+}
+
+/* banner section design ends here */
+
+/* We are gamer section style start*/
+.we-are-container{
+    margin: 50px auto 0;
+    max-width: 1400px;
+    min-height: 50px;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+}
+.we-img{
+    width: 45%;
+}
+.we-img img{
+    width: 100%;
+
+    border-radius: 10px;
+    /* height: 100%; */
+    object-fit: cover;
+}
+.we-text{
+    width: 50%; 
+    padding: 80px 50px; 
+    fill: linear-gradient(235deg, rgba(140, 87, 238, 0.03) 3.9%, rgba(241, 68, 174, 0.03) 100.56%);
+    text-align: right;
+}
+.we-are-container h3{
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.know-btn{
+    color: #FFF;
+    border-radius: 48px;
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 21px 40px;
+    border: 0;
+    text-align: left;
+}
+.we-text p{
+    color: #534C64;
+    font-size: 1.12rem;
+    font-weight: 400;
+}
+.we-text #our-purpose{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.we-text .unleash-text{
+    color: #534C64;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* We are gamer section style end*/
+
+
 
 
 
@@ -84,4 +225,39 @@ nav{
     .follow-us-btn{
         margin-bottom: 10px;
     }
+
+    /* Banner responsive */
+    .banner-container{
+        flex-direction: column-reverse;
+        gap: 15px;
+        
+    }
+    .banner-text, .banner-img{
+        width: 100%;
+        padding: 10px 20px;
+        height: 100%;
+        
+    }
+
+    /* Banner responsive ends here */
+
+    /* we are gamer style start*/
+    .we-are-container{
+        flex-direction: column;
+    }
+    .we-img, .we-text{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .we-text h3{
+        font-size: 2.5rem;
+    }
+    .we-text #our-purpose{
+        font-size: 1rem;
+    }
+    .we-text .unleash-text{
+        font-size: 1.2rem;
+    }
+    /* we are gamer style end*/
 }
